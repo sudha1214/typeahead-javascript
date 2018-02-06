@@ -1,0 +1,56 @@
+html, body {    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    font-family: 'sans-serif';
+    overflow: hidden;
+  }
+  
+#typeAhead-container {
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+}
+#typeAhead-container .fa-search { 
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    color: #aaa;
+}
+
+#inputField {
+    padding:8px 10px 8px 35px;
+    font-size: 16px;
+    width: 300px;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-family: sans-serif;
+}
+
+#inputField:focus {
+    border: 2px solid black;
+  }
+#matchedResults {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    max-height: 180px;
+    list-style: none;
+    border: 2px solid #ccc;
+    margin-top: 0px;
+    padding-left:0px; 
+    font-weight: lighter;
+}
+li {
+      width: 100%;
+      padding: 8px 0px;
+      cursor:default;
+      padding-left:15px;      
+}
+
+.selected {
+    background-color: gray;
+    opacity: 0.8;  
+  }
